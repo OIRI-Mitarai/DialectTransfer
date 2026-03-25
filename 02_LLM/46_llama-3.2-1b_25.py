@@ -7,8 +7,8 @@ import os
 import json
 
 from huggingface_hub import login
-# need to modify
-login(token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+login(token = "")
+
 
 # ============================================
 # パラメータ
@@ -20,12 +20,12 @@ num_train_epochs = 25
 # ============================================
 # モデルとトークナイザ
 # ============================================
-tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True, token="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")
+tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True, token="")
 
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
 
-model = AutoModelForCausalLM.from_pretrained(model_name, token="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")
+model = AutoModelForCausalLM.from_pretrained(model_name, token="")
 
 # ============================================
 # Word Embedding（方言辞書）
@@ -157,7 +157,7 @@ import sys
 import pandas as pd
 from transformers import pipeline
 
-tokenizer = AutoTokenizer.from_pretrained(output_dir, token="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")
+tokenizer = AutoTokenizer.from_pretrained(output_dir, token="")
 
 generator = pipeline(
     "text-generation",
