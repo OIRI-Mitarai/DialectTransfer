@@ -7,8 +7,8 @@ import os
 import json
 
 from huggingface_hub import login
-login(token = "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")
-
+# need to modify
+login(token = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
 # ============================================
 # パラメータ
