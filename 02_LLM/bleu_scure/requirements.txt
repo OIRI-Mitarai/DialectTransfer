@@ -1,0 +1,10 @@
+colorama==0.4.6
+lxml==6.0.2
+numpy==2.4.2
+pandas==3.0.0
+portalocker==3.2.0
+python-dateutil==2.9.0.post0
+regex==2026.1.15
+sacrebleu==2.6.0
+six==1.17.0
+tabulate==0.9.0
